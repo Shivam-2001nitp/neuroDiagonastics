@@ -1,0 +1,26 @@
+#client-section{
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content:"";
+    background: url(bgimage4.jpg) no-repeat;
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    /* top: 0px;
+    left: 0px; */
+
+}

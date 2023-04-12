@@ -1,0 +1,85 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.text input{
+    height: 250px;
+    width: 800px;
+    background: black;
+    color: aliceblue;
+    position: top;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.text{
+    padding-top: 12px;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar{
+    /* border: 3px solid black; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 50;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+
+}
+
+
+/* navigation bar: logo styling */
+#logo{
+    /* border: 3px solid black; */
+    margin: 5px 10px;
+   
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+/* navigation bar: list styling */
+
+#navbar ul{
+    /* border: 3px solid black; */
+    display: flex;
+    list-style-type: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+#navbar ul li{
+    font-size: 1rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
